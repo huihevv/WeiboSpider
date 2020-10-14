@@ -39,8 +39,8 @@ from lxml import etree
 
 filter = 1
 
-Cookie = '''替换成你自己的 cookie'''
-User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+Cookie = '_T_WM=15d353afbd0745bbc3c69601a8e2ea17; SSOLoginState=1602508033; SUB=_2A25ygCVRDeRhGeVJ4lAU8y3KwziIHXVRi0sZrDV6PUJbktAKLWTukW1NT96vyI2Nocy0JwUlODG50cXma7SEryyb; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5E-CUfm.EmS5orxR9IdbKc5JpX5KzhUgL.FoeN1Kzfe0ec1hB2dJLoIppTIGHVqc8Edc7_i--Xi-i2iK.fi--ciKnfi-2N; SUHB=0cSnIWarqsx_lk'
+User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
 
 headers = {
     'user-agent':User_Agent,

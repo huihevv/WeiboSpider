@@ -31,9 +31,9 @@ from datetime import datetime, timedelta
 import sys
 from threading import Thread
 
-Cookie = 'WEIBOCN_FROM=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.weibo.cn'
+Cookie = '_T_WM=15d353afbd0745bbc3c69601a8e2ea17; SSOLoginState=1602508033; SUB=_2A25ygCVRDeRhGeVJ4lAU8y3KwziIHXVRi0sZrDV6PUJbktAKLWTukW1NT96vyI2Nocy0JwUlODG50cXma7SEryyb; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5E-CUfm.EmS5orxR9IdbKc5JpX5KzhUgL.FoeN1Kzfe0ec1hB2dJLoIppTIGHVqc8Edc7_i--Xi-i2iK.fi--ciKnfi-2N; SUHB=0cSnIWarqsx_lk'
 
-User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
 
 
 class WeiboTopicScrapy(Thread):
@@ -432,7 +432,7 @@ class WeiboTopicScrapy(Thread):
             html = etree.HTML(res.text.encode('utf-8'))
 
             try:
-                weibos = html.xpath("//div[@class='c' and @id]")
+                weibos = html.xpath("//div[@class='c' and @id]")## 	'//div[@class="one"]'返回具有所有属性class和id的节点
 
                 for i in range(0, len(weibos)):
 
@@ -467,5 +467,5 @@ class WeiboTopicScrapy(Thread):
 
 if __name__ == '__main__':
     #filter = 0 爬取所有微博，filter = 1 爬取原创微博
-    keyword = '北京疫情'
+    keyword = '林小秋'
     WeiboTopicScrapy(keyword=keyword, filter=1, start_time='2020601', end_time='20200620')

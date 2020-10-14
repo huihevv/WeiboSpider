@@ -390,8 +390,8 @@ def start_crawl(cookie_dict, id):
         print(res.status_code)
 if __name__ == '__main__':
     global mid
-    username = "xxx"  # 用户名，一般是手机号码
-    password = "yyy"  # 密码
+    username = "18301926838"  # 用户名，一般是手机号码
+    password = "hehui15155533624"  # 密码
     cookie_path = "Cookie.txt"  # 保存cookie 的文件名称
     # id = '4467107636950632'     # 爬取微博的 id
     mid = 'Ha2zIe2TI'
